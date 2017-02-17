@@ -5,13 +5,13 @@ import java.util.List;
 /**
  * Created by Programming on 2/17/2017.
  */
-public class World extends Rectangle.Double implements Updatable
+public class World extends Rectangle implements Updatable
 {
     public List<Entity> entities;
 
-    public World(double x, double y, double w, double h)
+    public World(int w, int h)
     {
-        super(x, y, w, h);
+        super(0, 0, w, h);
         entities = new ArrayList<>();
     }
 
