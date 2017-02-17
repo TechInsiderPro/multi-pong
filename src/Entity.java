@@ -3,7 +3,7 @@
  */
 public class Entity implements Updatable
 {
-    public double x, y, vx, vy;
+    public double x, y, vx, vy, ax, ay;
 
     public Entity(double x, double y)
     {
@@ -16,5 +16,7 @@ public class Entity implements Updatable
     {
         x += vx;
         y += vy;
+        vx += ax;
+        vy += ay;
     }
 }
