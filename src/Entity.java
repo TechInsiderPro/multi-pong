@@ -16,5 +16,7 @@ public class Entity implements Updatable
     {
         x += vx;
         y += vy;
+        vx += ax;
+        vy += ay;
     }
 }
