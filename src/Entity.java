@@ -1,14 +1,15 @@
+import java.awt.*;
+
 /**
  * Created by Programming on 2/17/2017.
  */
-public class Entity implements Updatable
+public class Entity extends Rectangle.Double implements Updatable
 {
-    public double x, y, vx, vy, ax, ay;
+    public double vx, vy, ax, ay;
 
-    public Entity(double x, double y)
+    public Entity(double x, double y, double w, double h)
     {
-        this.x = x;
-        this.y = y;
+        super(x, y, w, h);
     }
 
     @Override
